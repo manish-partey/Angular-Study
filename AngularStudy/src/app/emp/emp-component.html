@@ -7,12 +7,16 @@
         <td>Last Name</td>
         <td>{{lastName}}</td>
     </tr>
-    <tr>
-        <td>Address</td>
+    <tr *ngIf='showDetails'>
+        <td >Address</td>
         <td>{{address}}</td>
     </tr>
-    <tr>
+    <tr *ngIf='showDetails'>
         <td>City</td>
         <td>{{city}}</td>
     </tr>
 </table>
+<br />
+<button (click)="toggleValue()">
+    {{ showDetails ? 'Show':'Hide' }}  Details
+</button>

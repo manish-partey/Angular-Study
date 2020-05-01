@@ -12,7 +12,11 @@ var EmpComponent = (function () {
         this.lastName = "Partey";
         this.address = "Belapur";
         this.city = "Mumbai";
+        this.showDetails = false;
     }
+    EmpComponent.prototype.toggleValue = function () {
+        this.showDetails = !this.showDetails;
+    };
     return EmpComponent;
 }());
 EmpComponent = __decorate([

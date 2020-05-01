@@ -10,4 +10,9 @@ export class EmpComponent {
     lastName: string = "Partey";
     address: string = "Belapur";
     city: string = "Mumbai";
+    showDetails: boolean = false;
+
+    toggleValue(): void {
+        this.showDetails = !this.showDetails;
+    }
 }
