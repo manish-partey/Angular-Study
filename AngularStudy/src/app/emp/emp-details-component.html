@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                Code
+            </td>
+            <td>
+                Name
+            </td>
+            <td>
+                Gender
+            </td>
+            <td>
+                Salary
+            </td>
+            <td>
+                DateOfBirth
+            </td>
+        </tr>
+        <tr *ngFor="let emp of employee">
+            <td>{{emp.empCode}}</td>
+            <td>{{emp.empName}}</td>
+            <td>{{emp.empGender}}</td>
+            <td>{{emp.empASal}}</td>
+            <td>{{emp.empDOB}}</td>
+        </tr>
+        <tr *ngIf="!employee || employee.length ==0">
+            <td colspan="5">No EmployeeFound</td>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+</body>
+</html>

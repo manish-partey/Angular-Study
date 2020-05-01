@@ -25,7 +25,10 @@ You Entered : {{name}}
 <input [(ngModel)]='name' />
 <br/>
 You Entered : {{name}}
+<br/>
+<emp-Details></emp-Details>
 `
+
 }) 
 
     export class AppComponent {

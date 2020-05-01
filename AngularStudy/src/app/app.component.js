@@ -30,7 +30,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: "my-app",
-        template: "<div>\n    <h1>{{pageHeader}}</h1>\n    </div>\n<my-emp></my-emp>\n<br/>\n<button style='color:red' [style.fontWeight]=\"isbold ? 'bold' : 'normal'\">Submit</button>\n<br/><br/>\n<button style='color:red' [style.font-size.px]=\"fontSize\">Submit</button>\n<br/><br/>\n<button style='color:red' [ngStyle]=\"applyStyle()\">Submit</button>\n<br/><br/>\n<button style='color:blue' (click)=\"onClick()\">Click</button>\n<br/><br/>\n<button style='color:blue' on-click=\"onClick()\">Alternate Click</button>\n<br/><br/>\nName : <input [value]='name' (input)='name=$event.target.value'>\n<br/><br/>\nYou Entered : {{name}}\n<br/><br/>\n<h2>Using Forms Module</h2>\n<input [(ngModel)]='name' />\n<br/>\nYou Entered : {{name}}\n"
+        template: "<div>\n    <h1>{{pageHeader}}</h1>\n    </div>\n<my-emp></my-emp>\n<br/>\n<button style='color:red' [style.fontWeight]=\"isbold ? 'bold' : 'normal'\">Submit</button>\n<br/><br/>\n<button style='color:red' [style.font-size.px]=\"fontSize\">Submit</button>\n<br/><br/>\n<button style='color:red' [ngStyle]=\"applyStyle()\">Submit</button>\n<br/><br/>\n<button style='color:blue' (click)=\"onClick()\">Click</button>\n<br/><br/>\n<button style='color:blue' on-click=\"onClick()\">Alternate Click</button>\n<br/><br/>\nName : <input [value]='name' (input)='name=$event.target.value'>\n<br/><br/>\nYou Entered : {{name}}\n<br/><br/>\n<h2>Using Forms Module</h2>\n<input [(ngModel)]='name' />\n<br/>\nYou Entered : {{name}}\n<br/>\n<emp-Details></emp-Details>\n"
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
