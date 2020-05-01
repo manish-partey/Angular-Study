@@ -16,6 +16,15 @@ import { Component } from "@angular/core"
 <button style='color:blue' (click)="onClick()">Click</button>
 <br/><br/>
 <button style='color:blue' on-click="onClick()">Alternate Click</button>
+<br/><br/>
+Name : <input [value]='name' (input)='name=$event.target.value'>
+<br/><br/>
+You Entered : {{name}}
+<br/><br/>
+<h2>Using Forms Module</h2>
+<input [(ngModel)]='name' />
+<br/>
+You Entered : {{name}}
 `
 }) 
 
@@ -24,7 +33,7 @@ import { Component } from "@angular/core"
     isbold: boolean = true;
     fontSize: number = 30;
     isItalic: boolean = true;
-
+    name: string = "Manish";
     applyStyle() {
         let newStyle = {
             'font-size.px': this.fontSize,
