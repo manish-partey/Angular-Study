@@ -12,6 +12,8 @@ import { Component } from "@angular/core"
 <button style='color:red' [style.font-size.px]="fontSize">Submit</button>
 <br/><br/>
 <button style='color:red' [ngStyle]="applyStyle()">Submit</button>
+<br/><br/>
+<button style='color:blue' (click)="onClick()">Click ME</button>
 `
 }) 
 
@@ -28,5 +30,9 @@ import { Component } from "@angular/core"
             'font.fontWeight': this.isbold ? 'bold':'normal'
         };
         return newStyle;
+    }
+
+    onClick(): void {
+        console.log("Button Clicked");
     }
 }
