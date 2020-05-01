@@ -10,13 +10,23 @@ var AppComponent = (function () {
     function AppComponent() {
         this.pageHeader = "Employee Details";
         this.isbold = true;
+        this.fontSize = 30;
+        this.isItalic = true;
     }
+    AppComponent.prototype.applyStyle = function () {
+        var newStyle = {
+            'font-size.px': this.fontSize,
+            'font-style': this.isItalic ? 'italic' : 'normal',
+            'font.fontWeight': this.isbold ? 'bold' : 'normal'
+        };
+        return newStyle;
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: "my-app",
-        template: "<div>\n    <h1>{{pageHeader}}</h1>\n    </div>\n<my-emp></my-emp>\n<br/>\n<button style='color:red' [style.fontWeight]=\"isbold ? 'bold' : 'normal'\">Submit</button>\n"
+        template: "<div>\n    <h1>{{pageHeader}}</h1>\n    </div>\n<my-emp></my-emp>\n<br/>\n<button style='color:red' [style.fontWeight]=\"isbold ? 'bold' : 'normal'\">Submit</button>\n<br/><br/>\n<button style='color:red' [style.font-size.px]=\"fontSize\">Submit</button>\n<br/><br/>\n<button style='color:red' [ngStyle]=\"applyStyle()\">Submit</button>\n"
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
