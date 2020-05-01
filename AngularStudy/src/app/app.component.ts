@@ -13,7 +13,9 @@ import { Component } from "@angular/core"
 <br/><br/>
 <button style='color:red' [ngStyle]="applyStyle()">Submit</button>
 <br/><br/>
-<button style='color:blue' (click)="onClick()">Click ME</button>
+<button style='color:blue' (click)="onClick()">Click</button>
+<br/><br/>
+<button style='color:blue' on-click="onClick()">Alternate Click</button>
 `
 }) 
 

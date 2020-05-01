@@ -29,7 +29,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: "my-app",
-        template: "<div>\n    <h1>{{pageHeader}}</h1>\n    </div>\n<my-emp></my-emp>\n<br/>\n<button style='color:red' [style.fontWeight]=\"isbold ? 'bold' : 'normal'\">Submit</button>\n<br/><br/>\n<button style='color:red' [style.font-size.px]=\"fontSize\">Submit</button>\n<br/><br/>\n<button style='color:red' [ngStyle]=\"applyStyle()\">Submit</button>\n<br/><br/>\n<button style='color:blue' (click)=\"onClick()\">Click ME</button>\n"
+        template: "<div>\n    <h1>{{pageHeader}}</h1>\n    </div>\n<my-emp></my-emp>\n<br/>\n<button style='color:red' [style.fontWeight]=\"isbold ? 'bold' : 'normal'\">Submit</button>\n<br/><br/>\n<button style='color:red' [style.font-size.px]=\"fontSize\">Submit</button>\n<br/><br/>\n<button style='color:red' [ngStyle]=\"applyStyle()\">Submit</button>\n<br/><br/>\n<button style='color:blue' (click)=\"onClick()\">Click</button>\n<br/><br/>\n<button style='color:blue' on-click=\"onClick()\">Alternate Click</button>\n"
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
