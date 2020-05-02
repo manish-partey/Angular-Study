@@ -22,18 +22,38 @@
             <td>
                 DateOfBirth
             </td>
+            <td>
+                Index
+            </td>
+            <td>
+                Is First
+            </td>
+            <td>
+                Is Last
+            </td>
+            <td>
+                Is Even
+            </td>
+            <td>
+                Is Odd
+            </td>
         </tr>
-        <tr *ngFor="let emp of employee; trackBy:getEmployeeTrack">
+        <tr *ngFor="let emp of employee; trackBy:getEmployeeTrack; let i = index; let isFirst = first; let isLast=last; let isEven=even; let isOdd=odd">
             <td>{{emp.empCode}}</td>
             <td>{{emp.empName}}</td>
             <td>{{emp.empGender}}</td>
             <td>{{emp.empASal}}</td>
             <td>{{emp.empDOB}}</td>
+            <td>{{i}}</td>
+            <td>{{isFirst}}</td>
+            <td>{{isLast}}</td>
+            <td>{{isEven}}</td>
+            <td>{{isOdd}}</td>
         </tr>
         <tr *ngIf="!employee || employee.length ==0">
-            <td colspan="5">No EmployeeFound</td>
+            <td colspan="6">No EmployeeFound</td>
         </tr>
-        <tr><td colspan="5">
+        <tr><td colspan="6">
             <button (click)="getEmployees()">Refresh Employees</button>
             </td>
         </tr>
