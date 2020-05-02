@@ -11,6 +11,7 @@ var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
 var emp_component_1 = require("./emp/emp-component");
 var emp_details_component_1 = require("./emp/emp-details-component");
+var emp_component_custom_1 = require("./emp/emp-component-custom");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -19,7 +20,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-        declarations: [app_component_1.AppComponent, emp_component_1.EmpComponent, emp_details_component_1.EmpDetailsComponent],
+        declarations: [app_component_1.AppComponent, emp_component_1.EmpComponent, emp_details_component_1.EmpDetailsComponent, emp_component_custom_1.EmpNameTransform],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
