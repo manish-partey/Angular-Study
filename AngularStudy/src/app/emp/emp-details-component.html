@@ -23,7 +23,7 @@
                 DateOfBirth
             </td>
         </tr>
-        <tr *ngFor="let emp of employee">
+        <tr *ngFor="let emp of employee; trackBy:getEmployeeTrack">
             <td>{{emp.empCode}}</td>
             <td>{{emp.empName}}</td>
             <td>{{emp.empGender}}</td>
@@ -33,7 +33,9 @@
         <tr *ngIf="!employee || employee.length ==0">
             <td colspan="5">No EmployeeFound</td>
         </tr>
-        <tr>
+        <tr><td colspan="5">
+            <button (click)="getEmployees()">Refresh Employees</button>
+            </td>
         </tr>
     </table>
 </body>
