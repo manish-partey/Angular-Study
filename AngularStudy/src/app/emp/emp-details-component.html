@@ -53,8 +53,9 @@
         <tr *ngIf="!employee || employee.length ==0">
             <td colspan="6">No EmployeeFound</td>
         </tr>
-        <tr><td colspan="6">
-            <button (click)="getEmployees()">Refresh Employees</button>
+        <tr>
+            <td colspan="6">
+                <button (click)="getEmployees()">Refresh Employees</button>
             </td>
         </tr>
     </table>

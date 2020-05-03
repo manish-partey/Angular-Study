@@ -1,13 +1,9 @@
-import { Component } from "@angular/core"
-
-@Component({
-    selector: "my-app",    
-    template: `<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <title></title>
-    
+    <link href="../lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
@@ -28,26 +24,3 @@ import { Component } from "@angular/core"
     </div>
 </body>
 </html>
-`
-    
-})
-
-    export class AppComponent {
-    pageHeader: string = "Employee Details";
-    isbold: boolean = true;
-    fontSize: number = 30;
-    isItalic: boolean = true;
-    name: string = "Manish";
-    applyStyle() {
-        let newStyle = {
-            'font-size.px': this.fontSize,
-            'font-style':this.isItalic ? 'italic':'normal',
-            'font.fontWeight': this.isbold ? 'bold':'normal'
-        };
-        return newStyle;
-    }
-
-    onClick(): void {
-        console.log("Button Clicked");
-    }
-}
