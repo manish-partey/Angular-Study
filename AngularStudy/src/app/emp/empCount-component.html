@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../../twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <span>Show Options:</span>
+        <input class="custom-radio" type="radio" name="count" value="All" [(ngModel)]="selectedRadioButtonValue" (change)="onRadioButtonSelectionChange()" /><span>{{"All(" + all + ")"}}</span>
+        <input class="custom-radio" type="radio" name="count" value="Male" [(ngModel)]="selectedRadioButtonValue" (change)="onRadioButtonSelectionChange()"/><span>{{"Male(" + male + ")"}}</span>
+        <input class="custom-radio" type="radio" name="count" value="Female" [(ngModel)]="selectedRadioButtonValue" (change)="onRadioButtonSelectionChange()"/><span>{{"Female(" + female + ")"}}</span>
+    </div>
+</body>
+</html>

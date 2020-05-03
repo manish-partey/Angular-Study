@@ -11,26 +11,39 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var EmpDetailsComponent = (function () {
     function EmpDetailsComponent() {
+        this.selectedEmployeeRadioButton = 'All';
         this.employee = [
             { empCode: 'Emp101', empName: 'Manish', empGender: 'Male', empASal: 5555, empDOB: '04/11/1982' },
-            { empCode: 'Emp102', empName: 'Manish123', empGender: 'Fe-Male', empASal: 6587, empDOB: '04/11/1982' },
+            { empCode: 'Emp102', empName: 'Manish123', empGender: 'Female', empASal: 6587, empDOB: '04/11/1982' },
             { empCode: 'Emp103', empName: 'Manish456', empGender: 'Male', empASal: 354, empDOB: '04/11/1982' },
-            { empCode: 'Emp104', empName: 'Manish678', empGender: 'Fe-Male', empASal: 35654, empDOB: '04/11/1982' },
+            { empCode: 'Emp104', empName: 'Manish678', empGender: 'Female', empASal: 35654, empDOB: '04/11/1982' },
             { empCode: 'Emp105', empName: 'Manish890', empGender: 'Male', empASal: 6546, empDOB: '04/11/1982' },
         ];
     }
     EmpDetailsComponent.prototype.getEmployees = function () {
         this.employee = [
             { empCode: 'Emp101', empName: 'Manish', empGender: 'Male', empASal: 5555, empDOB: '04/11/1982' },
-            { empCode: 'Emp102', empName: 'Manish123', empGender: 'Fe-Male', empASal: 6587, empDOB: '04/11/1982' },
+            { empCode: 'Emp102', empName: 'Manish123', empGender: 'Female', empASal: 6587, empDOB: '04/11/1982' },
             { empCode: 'Emp103', empName: 'Manish456', empGender: 'Male', empASal: 354, empDOB: '04/11/1982' },
-            { empCode: 'Emp104', empName: 'Manish678', empGender: 'Fe-Male', empASal: 35654, empDOB: '04/11/1982' },
+            { empCode: 'Emp104', empName: 'Manish678', empGender: 'Female', empASal: 35654, empDOB: '04/11/1982' },
             { empCode: 'Emp105', empName: 'Manish890', empGender: 'Male', empASal: 6546, empDOB: '04/11/1982' },
             { empCode: 'Emp106', empName: 'Manish290', empGender: 'Femal', empASal: 9825, empDOB: '04/11/1982' },
         ];
     };
     EmpDetailsComponent.prototype.getEmployeeTrack = function (index, employee) {
         return employee.empCode;
+    };
+    EmpDetailsComponent.prototype.getTotalEmpCount = function () {
+        return this.employee.length;
+    };
+    EmpDetailsComponent.prototype.getTotalMaleEmpCount = function () {
+        return this.employee.filter(function (e) { return e.empGender === "Male"; }).length;
+    };
+    EmpDetailsComponent.prototype.getTotalFemalEmpCount = function () {
+        return this.employee.filter(function (e) { return e.empGender === "Female"; }).length;
+    };
+    EmpDetailsComponent.prototype.onEmployeeCountRadioButtonChange = function (selectedRadioButtonValue) {
+        this.selectedEmployeeRadioButton = selectedRadioButtonValue;
     };
     return EmpDetailsComponent;
 }());
