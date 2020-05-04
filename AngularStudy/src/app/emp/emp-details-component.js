@@ -9,16 +9,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var employee_service_1 = require("./employee-service");
 var EmpDetailsComponent = (function () {
-    function EmpDetailsComponent() {
+    function EmpDetailsComponent(_employeeService) {
+        this._employeeService = _employeeService;
         this.selectedEmployeeRadioButton = 'All';
-        this.employee = [
-            { empCode: 'Emp101', empName: 'Manish', empGender: 'Male', empASal: 5555, empDOB: '04/11/1982' },
-            { empCode: 'Emp102', empName: 'Manish123', empGender: 'Female', empASal: 6587, empDOB: '04/11/1982' },
-            { empCode: 'Emp103', empName: 'Manish456', empGender: 'Male', empASal: 354, empDOB: '04/11/1982' },
-            { empCode: 'Emp104', empName: 'Manish678', empGender: 'Female', empASal: 35654, empDOB: '04/11/1982' },
-            { empCode: 'Emp105', empName: 'Manish890', empGender: 'Male', empASal: 6546, empDOB: '04/11/1982' },
-        ];
+        this.employee = this._employeeService.getEmployee();
     }
     EmpDetailsComponent.prototype.getEmployees = function () {
         this.employee = [
@@ -50,9 +46,10 @@ var EmpDetailsComponent = (function () {
 EmpDetailsComponent = __decorate([
     core_1.Component({
         selector: "emp-Details",
-        templateUrl: "app/emp/emp-details-component.html"
+        templateUrl: "app/emp/emp-details-component.html",
+        providers: [employee_service_1.EmployeeService]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [employee_service_1.EmployeeService])
 ], EmpDetailsComponent);
 exports.EmpDetailsComponent = EmpDetailsComponent;
 //# sourceMappingURL=emp-details-component.js.map

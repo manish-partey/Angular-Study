@@ -7,9 +7,6 @@ var Employee = (function () {
         this.empASal = empASal;
         this.empDOB = empDOB;
     }
-    Employee.prototype.computeMonthlySalary = function (empASal) {
-        return empASal / 12;
-    };
     return Employee;
 }());
 exports.Employee = Employee;
