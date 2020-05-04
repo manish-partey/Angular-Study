@@ -177,7 +177,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CodeListModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\CodeList.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DC_PLT_Support_CodeLists.cs">

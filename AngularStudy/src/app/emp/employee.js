@@ -1,5 +1,6 @@
 "use strict";
-var Employee = (function () {
+Object.defineProperty(exports, "__esModule", { value: true });
+var Employee = /** @class */ (function () {
     function Employee(empCode, empName, empGender, empASal, empDOB) {
         this.empCode = empCode;
         this.empName = empName;
