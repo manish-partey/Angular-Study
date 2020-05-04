@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ExampleDataModelStoreContainer" CdmEntityContainer="ExampleDataEntities">
+    <EntitySetMapping Name="DC_PLT_Support_CodeLists">
+      <EntityTypeMapping TypeName="ExampleDataModel.DC_PLT_Support_CodeLists">
+        <MappingFragment StoreEntitySet="DC_PLT_Support_CodeLists">
+          <ScalarProperty Name="CultureCode" ColumnName="CultureCode" />
+          <ScalarProperty Name="CodeType" ColumnName="CodeType" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="SortSequence" ColumnName="SortSequence" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="BaseCodeIndicator" ColumnName="BaseCodeIndicator" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
