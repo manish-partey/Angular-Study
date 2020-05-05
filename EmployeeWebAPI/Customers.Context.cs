@@ -13,10 +13,10 @@ namespace EmployeeWebAPI
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ExampleDataEntities : DbContext
+    public partial class NORTHWNDEntities : DbContext
     {
-        public ExampleDataEntities()
-            : base("name=ExampleDataEntities")
+        public NORTHWNDEntities()
+            : base("name=NORTHWNDEntities")
         {
         }
     
@@ -25,6 +25,6 @@ namespace EmployeeWebAPI
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<DC_PLT_Support_CodeLists> DC_PLT_Support_CodeLists { get; set; }
+        public virtual DbSet<Customer> Customers { get; set; }
     }
 }

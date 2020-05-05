@@ -162,26 +162,26 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="CodeListModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CodeListModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CodeListModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CodeListModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CodeListModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CodeListModel.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
-    <Compile Include="DC_PLT_Support_CodeLists.cs">
-      <DependentUpon>CodeListModel.tt</DependentUpon>
+    <Compile Include="Customer.cs">
+      <DependentUpon>Customers.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customers.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customers.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customers.edmx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -190,20 +190,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
-    <Content Include="CodeListModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>CodeListModel.Context.cs</LastGenOutput>
-      <DependentUpon>CodeListModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="CodeListModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CodeListModel.edmx</DependentUpon>
-      <LastGenOutput>CodeListModel.cs</LastGenOutput>
-    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Customers.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Customers.edmx</DependentUpon>
+      <LastGenOutput>Customers.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Customers.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Customers.edmx</DependentUpon>
+      <LastGenOutput>Customers.cs</LastGenOutput>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -228,12 +228,12 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <EntityDeploy Include="CodeListModel.edmx">
+    <EntityDeploy Include="Customers.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CodeListModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>Customers.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="CodeListModel.edmx.diagram">
-      <DependentUpon>CodeListModel.edmx</DependentUpon>
+    <Content Include="Customers.edmx.diagram">
+      <DependentUpon>Customers.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

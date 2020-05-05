@@ -9,20 +9,20 @@ namespace EmployeeWebAPI.Controllers
 {
     public class DefaultController : ApiController
     {
-		public IEnumerable<DC_PLT_Support_CodeLists> Get()
+		public IEnumerable<Customer> Get()
 		{
-			using (ExampleDataEntities obj = new ExampleDataEntities())
+			using (NORTHWNDEntities obj = new NORTHWNDEntities())
 			{
-				return obj.DC_PLT_Support_CodeLists.ToList();
+				return obj.Customers.ToList();
 			}
 		}
 
 		// GET api/<controller>/5
-		public DC_PLT_Support_CodeLists Get(string id)
+		public Customer Get(string id)
 		{
-			using (ExampleDataEntities obj = new ExampleDataEntities())
+			using (NORTHWNDEntities obj = new NORTHWNDEntities())
 			{
-				return obj.DC_PLT_Support_CodeLists.FirstOrDefault(e => e.Code == id);
+				return obj.Customers.FirstOrDefault(e => e.CustomerID == id);
 			}
 		}
 	}
