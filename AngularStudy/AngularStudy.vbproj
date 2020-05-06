@@ -189,6 +189,7 @@
     <TypeScriptCompile Include="src\app\emp\empCount-component.ts" />
     <TypeScriptCompile Include="src\app\emp\employee-service.ts" />
     <TypeScriptCompile Include="src\app\emp\employee.ts" />
+    <TypeScriptCompile Include="src\app\other\other-component.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
   <ItemGroup>

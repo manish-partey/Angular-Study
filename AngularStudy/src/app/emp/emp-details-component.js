@@ -8,10 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var employee_service_1 = require("./employee-service");
-var EmpDetailsComponent = /** @class */ (function () {
+var EmpDetailsComponent = (function () {
     function EmpDetailsComponent(_employeeService) {
         this._employeeService = _employeeService;
         this.selectedEmployeeRadioButton = 'All';
@@ -42,15 +41,15 @@ var EmpDetailsComponent = /** @class */ (function () {
     EmpDetailsComponent.prototype.onEmployeeCountRadioButtonChange = function (selectedRadioButtonValue) {
         this.selectedEmployeeRadioButton = selectedRadioButtonValue;
     };
-    EmpDetailsComponent = __decorate([
-        core_1.Component({
-            selector: "emp-Details",
-            templateUrl: "app/emp/emp-details-component.html",
-            providers: [employee_service_1.EmployeeService]
-        }),
-        __metadata("design:paramtypes", [employee_service_1.EmployeeService])
-    ], EmpDetailsComponent);
     return EmpDetailsComponent;
 }());
+EmpDetailsComponent = __decorate([
+    core_1.Component({
+        selector: "emp-Details",
+        templateUrl: "app/emp/emp-details-component.html",
+        providers: [employee_service_1.EmployeeService]
+    }),
+    __metadata("design:paramtypes", [employee_service_1.EmployeeService])
+], EmpDetailsComponent);
 exports.EmpDetailsComponent = EmpDetailsComponent;
 //# sourceMappingURL=emp-details-component.js.map

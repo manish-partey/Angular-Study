@@ -8,9 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var EmployeCountComponent = /** @class */ (function () {
+var EmployeCountComponent = (function () {
     function EmployeCountComponent() {
         this.selectedRadioButtonValue = 'All';
         this.countRadioButtonSelectionChange = new core_1.EventEmitter();
@@ -19,29 +18,29 @@ var EmployeCountComponent = /** @class */ (function () {
         this.countRadioButtonSelectionChange.emit(this.selectedRadioButtonValue);
         console.log(this.selectedRadioButtonValue);
     };
-    __decorate([
-        core_1.Output(),
-        __metadata("design:type", core_1.EventEmitter)
-    ], EmployeCountComponent.prototype, "countRadioButtonSelectionChange", void 0);
-    __decorate([
-        core_1.Input(),
-        __metadata("design:type", Number)
-    ], EmployeCountComponent.prototype, "all", void 0);
-    __decorate([
-        core_1.Input(),
-        __metadata("design:type", Number)
-    ], EmployeCountComponent.prototype, "male", void 0);
-    __decorate([
-        core_1.Input(),
-        __metadata("design:type", Number)
-    ], EmployeCountComponent.prototype, "female", void 0);
-    EmployeCountComponent = __decorate([
-        core_1.Component({
-            selector: "emp-count",
-            templateUrl: "app/emp/empCount-component.html"
-        })
-    ], EmployeCountComponent);
     return EmployeCountComponent;
 }());
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", core_1.EventEmitter)
+], EmployeCountComponent.prototype, "countRadioButtonSelectionChange", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], EmployeCountComponent.prototype, "all", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], EmployeCountComponent.prototype, "male", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], EmployeCountComponent.prototype, "female", void 0);
+EmployeCountComponent = __decorate([
+    core_1.Component({
+        selector: "emp-count",
+        templateUrl: "app/emp/empCount-component.html"
+    })
+], EmployeCountComponent);
 exports.EmployeCountComponent = EmployeCountComponent;
 //# sourceMappingURL=empCount-component.js.map

@@ -6,23 +6,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var EmpNameTransform = (function () {
-    function EmpNameTransform() {
+var OtherComponent = (function () {
+    function OtherComponent() {
     }
-    EmpNameTransform.prototype.transform = function (value, gender) {
-        if (gender.toLowerCase() == "male") {
-            return "Mr." + value;
-        }
-        else {
-            return "Miss." + value;
-        }
-    };
-    return EmpNameTransform;
+    return OtherComponent;
 }());
-EmpNameTransform = __decorate([
-    core_1.Pipe({
-        name: 'employeeTitle'
+OtherComponent = __decorate([
+    core_1.Component({
+        template: "<h1>Welcome to Website</h1>"
     })
-], EmpNameTransform);
-exports.EmpNameTransform = EmpNameTransform;
-//# sourceMappingURL=emp-component-custom.js.map
+], OtherComponent);
+exports.OtherComponent = OtherComponent;
+//# sourceMappingURL=other-component.js.map

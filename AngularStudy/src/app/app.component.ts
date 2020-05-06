@@ -15,6 +15,14 @@ import { Component } from "@angular/core"
         <div class="row">
             <my-emp></my-emp>
         </div>
+<div class="row" style="padding:5px;">
+<ul class="nav nav-tabs">
+<li routerLinkActive="active"><a routerLink="home">Home</a></li>
+<li routerLinkActive="active"><a routerLink="emp">Employee</a></li>
+</ul>
+<router-outlet></router-outlet>
+</div>
+
         <div class="row"><button style='color:red' [style.fontWeight]="isbold ? 'bold' : 'normal'">Submit</button></div>
         <div class="row"><button style='color:red' [style.font-size.px]="fontSize">Submit</button></div>
         <div class="row"><button style='color:red' [ngStyle]="applyStyle()">Submit</button></div>
